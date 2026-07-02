@@ -50,7 +50,7 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
     
     // print info(http only)
     /* http only filter */
-    if (ntohs(tcp->tcp_dport) != 80 && ntohs(tcp->tcp_sport) != 80) return;
+    // if (ntohs(tcp->tcp_dport) != 80 && ntohs(tcp->tcp_sport) != 80) return;
 
     printf("===============================\n");
     printf("[Ethernet Header]\n");
